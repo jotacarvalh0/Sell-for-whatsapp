@@ -32,10 +32,18 @@ b {
     font-family: 'PoppinsMedium', 'Rubik', sans-serif;
 }
 
+.color-primary{
+    color: var(--color-primary);
+}
+
 .nav-link{
     color: var(--color-black)!important;
     padding-left: 35px!important;
     padding-right: 35px!important;
+}
+
+a.navbar-brand {
+    margin-left: -25px;
 }
 
 .btn-white{
@@ -44,7 +52,13 @@ b {
     border-radius: 20px;
     padding: 15px 25px;
     font-size: 20px;
-    box-shadow: 0px 10px 15px -4px rgba(0,0,0,0.3);
+    box-shadow: -6px 15px 15px -2px rgba(0,0,0,0.3);
+}
+.btn-white:hover{
+    background-color: var(--color-primary);
+    .icon{
+        background-color: var(--color-white);
+    }
 }
 
 .btn-icon{
@@ -65,9 +79,114 @@ b {
     padding-top: 6px;
 }
 
-.btn-white:hover{
-    background-color: var(--color-primary);
-.icon{
-    background-color: var(--color-white);
+.banner {
+    padding-top: 110px;
+    padding-bottom: 200px;
 }
+
+.text-banner {
+    flex-direction: column;
+    justify-content: center;
+    margin-bottom: 60px;
+}
+
+.text-banner h1 {
+    color: var(--color-black);
+    font-size: 60px;
+}
+
+.text-banner p {
+    margin-top: 15px;
+    margin-bottom: 15px;
+    font-size: 20px;
+}
+
+.btn-yellow {
+    background-color: var(--color-primary);
+    color: var(--color-white)!important;
+    border-radius: 20px;
+    padding: 15px 25px;
+    font-size: 20px;
+    box-shadow: -6px 10px 15px -3px rgb(0,0,0,0.3);
+
+}
+.btn-yellow:hover {
+    color: var(--color-black)!important;
+}
+
+.btn-icon-left {
+    padding-left: 70px;
+}
+
+.btn-icon-left span.icon-left {
+    display: inline-block;
+    color: var(--color-white);
+    background-color: var(--color-primary);
+    width: 45px;
+    height: 45px;
+    position: absolute;
+    margin-left: -60px;
+    margin-top: -8px;
+    border-radius: 15px;
+    text-align: center;
+    padding-top: 8px;
+}
+
+.btn-sm {
+    padding: 9px 15px!important;
+    border-radius: 15px!important;
+    font-size: 18px;
+}
+
+.btn-sm:hover{
+    background-color: var(--color-primary);
+    color: var(--color-white);
+    .fab {
+        color: var(--color-white);
+    }
+}
+
+.btn-social {
+    width: 50px;
+}
+
+.card-banner {
+    height: 450px;
+    width: 450px;
+    border-radius: 170px;
+    background-color: #F4C949;
+    position: absolute;
+    right: 0;
+    top: -80px;
+}
+
+.img-banner img {
+    position: absolute;
+    width: 570px;
+    top: 30px;
+    right: 15px;
+}
+
+.card {
+    border-radius: 20px;
+    padding: 15px 20px;
+    font-size: 20px;
+    box-shadow: -6px 10px 15px -3px rgb(0,0,0,0.3)!important;
+    border: none;
+}
+
+.card-case {
+    width: 350px;
+    font-size: 14px;
+    position: absolute;
+    right: 0;
+    bottom: -15px;
+}
+
+.card-case-name {
+    position: absolute;
+    font-size: 12px;
+    color: var(--color-primary);
+    right: 20px;
+    bottom: 10px;
 }
