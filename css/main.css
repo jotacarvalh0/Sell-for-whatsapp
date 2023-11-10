@@ -537,3 +537,19 @@ footer {
     align-items: center;
     margin-right: 20px;
 }
+
+.etapa::before {
+    content: '';
+    width: 20px;
+    background-color: var(--color-separate);
+    position: absolute;
+    height: 2px;
+    margin-left: 55px;
+}
+.etapa:last-child::before {
+    content: none;
+}
+
+.etapa.active {
+    background-color: var(--color-primary);
+}
