@@ -406,7 +406,7 @@
 
     </footer>
 
-    <div class="modal-full" id="modalCarrinho">
+    <div class="modal-full hidden" id="modalCarrinho">
         
         <div class="m-header">
             <div class="container">
@@ -448,7 +448,7 @@
 
                 </div>
 
-                <div id="localEntrega" class="row mr-0 ml-0">
+                <div id="localEntrega" class="row mr-0 ml-0 hidden">
 
                     <div class="col-4">
                         <div class="form-group container-cep">
@@ -529,6 +529,55 @@
                 </div>
 
                 <div id="resumoCarrinho" class="row mr-0 ml-0 hidden">
+                    <div class="col-12">
+                        <p class="title-carrinho mt-4">
+                            <b>Itens do pedido:</b>
+                        </p>
+                    </div>
+
+                    <div class="col-12">
+                        <div class="row" id="listaItensResumo">
+
+                            <div class="col-12 item-carrinho resumo">
+                                <div class="img-produto-resumo">
+                                    <img src="./img/cardapio/burguers/Gramercy-Tavern-Burger-and-Kielbasa-Kit-6.4.21-72ppi-1x1-15.jpg" alt="">
+                                </div>
+                                <div class="dados-produto">
+                                    <p class="title-produto-resumo">
+                                        <b>Hamburguer Master</b>
+                                    </p>
+                                    <p class="price-produto-resumo">
+                                        <b>R$ 100,00</b>
+                                    </p>
+                                </div>
+                                <p class="quantidade-produto-resumo">
+                                    x <b>3</b>
+                                </p>
+                            </div>
+
+                        </div>
+                    </div>
+
+                    <div class="col-12">
+                        <p class="title-carrinho mt-4">
+                            <b>Local da entrega:</b>
+                        </p>
+                    </div>
+
+                    <div class="col-12 item-carrinho resumo">
+                        <div class="img-map">
+                            <i class="fas fa-map-marked-alt"></i>
+                        </div>
+                        <div class="dados-produto">
+                            <p class="texto-endereco">
+                                <b id="resumoEndereco">Rua teste, 200, bairro teste</b>
+                            </p>
+                            <p class="cidade-endereco" id="cidadeEndereco">
+                                Cidade -SP / 14711-000
+                            </p>
+                        </div>
+                        
+                    </div>
 
                 </div>
 
