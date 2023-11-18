@@ -115,7 +115,7 @@ cardapio.metodos = {
                     MEU_CARRINHO.push(item[0])
                 }
 
-                alert('Item adicionado ao carrinho')
+                cardapio.metodos.mensagem('Item adicionado ao carrinho')
                 $("#qntd-" + id).text(0)
 
                 cardapio.metodos.atualizarBadgeTotal();
@@ -145,6 +145,12 @@ cardapio.metodos = {
 
         $(".badge-total-carrinho").html(total);
 
+    },
+
+    mensagem: (texto, cor = 'red', tempo = 3500) => {
+
+        $("#containerMensagens").append(texto)
+        
     },
 }
 
