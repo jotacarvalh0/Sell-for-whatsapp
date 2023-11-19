@@ -12,9 +12,7 @@
 </head>
 <body>
 
-    <div class="container-mensagens" id="containerMensagens">
-        
-    </div>
+    <div class="container-mensagens" id="containerMensagens"></div>
     
     <a class="botao-carrinho hidden" onclick="cardapio.metodos.abrirCarrinho(true)">
         <div class="badge-total-carrinho">0</div>
@@ -394,11 +392,11 @@
         
         <div class="m-header">
             <div class="container">
-                <a href="" class="btn btn-white btn-sm float-right" onclick="cardapio.metodos.abrirCarrinho(false)">
+                <a class="btn btn-white btn-sm float-right" onclick="cardapio.metodos.abrirCarrinho(false)">
                     Fechar
                 </a>
                 <div class="etapas">
-                    <div class="etapa etapa-1 active">1</div>
+                    <div class="etapa etapa-1">1</div>
                     <div class="etapa etapa-2">2</div>
                     <div class="etapa etapa-3">3</div>
                 </div>
@@ -585,17 +583,17 @@
                             <span class="valor-total" id="lblValorTotal"><b>R$ 110,00</b></span>
                         </p>
                     </div>
-                    <a href="" class="btn btn-yellow float-right" id="btnEtapaPedido">
+                    <a onclick="cardapio.metodos.carregarEtapa(2)" class="btn btn-yellow float-right" id="btnEtapaPedido">
                         Continuar
                     </a>
-                    <a href="" class="btn btn-yellow float-right hidden" id="btnEtapaEndereco">
+                    <a onclick="cardapio.metodos.carregarEtapa(3)" class="btn btn-yellow float-right hidden" id="btnEtapaEndereco">
                         Revisar pedido
                     </a>
-                    <a href="" class="btn btn-yellow float-right hidden" id="btnEtapaResumo">
+                    <a class="btn btn-yellow float-right hidden" id="btnEtapaResumo">
                         Enviar pedido
                     </a>
 
-                    <a href="" class="btn btn-white mr-3 float-right hidden" id="btnVoltar">
+                    <a onclick="cardapio.metodos.voltarEtapa()" class="btn btn-white mr-3 float-right hidden" id="btnVoltar">
                         Voltar
                     </a>
                 </div>
