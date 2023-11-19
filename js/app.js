@@ -333,6 +333,60 @@ cardapio.metodos = {
 
     },
 
+    carregarEndereco: () => {
+
+        if (MEU_CARRINHO.length <= 0) {
+            cardapio.metodos.mensagem('Seu carrinho esta vazio.')
+            return;
+        }
+
+        cardapio.metodos.carregarEtapa(2)
+
+    },
+
+    buscarCep: () => {
+
+        // Criar variavel com valor do CEP
+        var cep = $("#txtCEP").val().trim().replace(/\D/g, '')
+
+        // Verificar se o CEP possui valor
+        if ( cep!= "") {
+
+            // Expressão regular para validar o CEP
+            var validacep = /^[0-9]{8}$/
+
+            if(validacep.test(cep)) {
+
+                $.getJSON("https://viacep.com.br/ws/" + cep + "/json/?callback=?", function(dados) {
+
+                    if (!("erro" in dados)) {
+
+                        // Atualizar os campos com os valores retornados.
+                        $("#txtEndereco").val(dados.logradouro)
+                        $("#txtBairro").val(dados.bairro)
+                        $("#txtCidade").val(dados.localidade)
+                        $("#ddlUf").val(dados.uf)
+                        // Focar no numero apos dados serem inseridos.
+                        $("#txNumero").focus()
+
+                    }else {
+                        cardapio.metodos.mensagem('CEP não encontrado. Preencha as informações manualmente.')
+                        $("#txtEndereco").focus();
+                    }
+
+                })
+
+            }else {
+                cardapio.metodos.mensagem('Formato do CEP é inválido.')
+                $("#txtCEP").focus();
+            }
+
+        }else {
+            cardapio.metodos.mensagem('Informe o CEP, por favor.')
+            $("#txtCEP").focus();
+        }
+
+    },
 
 
     mensagem: (texto, cor = 'red', tempo = 3500) => {
