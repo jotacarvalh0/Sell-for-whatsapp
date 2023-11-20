@@ -319,7 +319,7 @@ a.navbar-brand {
 }
 .add-numero-itens {
     color: var(--color-black-heavy);
-    padding: 0px 15px;
+    padding: 0.5px 15px;
     border-top: 2px solid var(--color-black-heavy);
     border-bottom: 2px solid var(--color-black-heavy);
 }
