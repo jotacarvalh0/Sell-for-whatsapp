@@ -1,14 +1,16 @@
 <!DOCTYPE html>
 <html lang="pt-BR">
 <head>
-    <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <link rel="stylesheet" href="./css/bootstrap.min.css">
-    <link rel="stylesheet" href="./css/fontawesome.css">
-    <link rel="stylesheet" href="./css/main.css">
-    <link rel="stylesheet" href="./css/animate.css">
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link rel="stylesheet" href="./css/bootstrap.min.css" />
+    <link rel="stylesheet" href="./css/fontawesome.css" />
+    <link rel="stylesheet" href="./css/main.css" />
+    <link rel="stylesheet" href="./css/animate.css" />
+    <link rel="stylesheet" href="./css/responsivo.css" />
 
-    <title>Cardápio</title>
+    <title>KRTec Softwares</title>
 </head>
 <body>
 
@@ -21,7 +23,7 @@
 
     <section class="header">
         <div class="container">
-            <nav class="navbar navbar-expand-lg pl-0 pr-0">
+            <nav class="navbar navbar-expand-lg pl-0 pr-0 col-one">
                 <a class="navbar-brand wow fadeIn" href="">
                     <img src="./img/logo.png" width="160px" class="img-logo" alt="Logo">
                 </a>
@@ -59,7 +61,7 @@
     <section class="banner">
         <div class="container">
             <div class="row">
-                <div class="col-6">
+                <div class="col-12 col-lg-6 col-md-6 col-sm-12 col-one">
                     <div class="d-flex text-banner">
                         <h1 class="wow fadeInLeft"><b>Os melhores lanches da<b class="color-primary"> cidade.</b></b></h1>
                         <p class="wow fadeIn delay-05s">
@@ -88,7 +90,7 @@
                         <i class="fab fa-whatsapp"></i>
                     </a>
                 </div>
-                <div class="col-6">
+                <div class="col-6 no-mobile">
                     <div class="card-banner"></div>
                     <div class="d-flex img-banner wow fadeIn delay-03s">
                         <img src="./img/burguer.png">
@@ -117,7 +119,7 @@
                     </h1>
                 </div>
 
-                <div class="col-4 mb-5 wow fadeInUp delay-02s">
+                <div class="col-12 col-lg-4 col-md-4 col-sm-12 col-one mb-5 wow fadeInUp delay-02s">
                     <div class="card-icon text-center">
                         <img src="./img/icone-pedido.svg" alt="Icone de pedidos" width="150">
                     </div>
@@ -129,7 +131,7 @@
                     </div>
                 </div>
 
-                <div class="col-4 mb-5 wow fadeInUp delay-02s">
+                <div class="col-12 col-lg-4 col-md-4 col-sm-12 col-one mb-5 wow fadeInUp delay-02s">
                     <div class="card-icon text-center">
                         <img src="./img/icone-delivery.svg" alt="Icone de delivery" width="250">
                     </div>
@@ -141,7 +143,7 @@
                     </div>
                 </div>
 
-                <div class="col-4 mb-5 wow fadeInUp delay-02s">
+                <div class="col-12 col-lg-4 col-md-4 col-sm-12 col-one mb-5 wow fadeInUp delay-02s">
                     <div class="card-icon text-center">
                         <img src="./img/icone-qualidade.svg" alt="Icone de qualidade" width="250">
                     </div>
@@ -162,14 +164,14 @@
 
         <div class="container">
             <div class="row">
-                <div class="col-12 text-center mb-5">
+                <div class="col-12 col-one text-center mb-5">
                     <span class="hint-title wow fadeIn delay-01s"><b>Cardápio</b></span>
                     <h1 class="title wow fadeIn delay-02s">
                         <b>Conheça o nosso cardápio</b>
                     </h1>
                 </div>
 
-                <div class="col-12 container-menu wow fadeInUp delay-02s">
+                <div class="col-12 col-one container-menu wow fadeInUp delay-02s">
 
                     <a id="menu-burgers" class="btn btn-white btn-sm mr-3 active" onclick="cardapio.metodos.obterItensCardapio('burgers')">
                         <i class="fas fa-hamburger"></i>&nbsp; Burgers
@@ -193,7 +195,7 @@
 
                 </div>
 
-                <div class="col-12">
+                <div class="col-12 col-one">
                     <div class="row" id="itensCardapio">
                     
 
@@ -201,7 +203,7 @@
                     </div>
                 </div>
 
-                <div class="col-12 text-center wow fadeInUp delay-02s">
+                <div class="col-12 col-one text-center wow fadeInUp delay-02s">
                     <a id="btnVerMais" class="btn btn-white btn-sm" onclick="cardapio.metodos.verMais()">
                         Ver mais
                     </a>
@@ -214,14 +216,14 @@
         <div class="container">
             <div class="row">
 
-                <div class="col-5 text-center">
+                <div class="col-5 no-mobile text-center">
                     <div class="card-depoimentos wow fadeIn delay-01s"></div>
                     <div class="d-flex img-banner img-acai wow fadeInLeft delay-03s">
                         <img src="./img/img_acai.png" alt="">
                     </div>
                 </div>
 
-                <div class="col-7">
+                <div class="col-12 col-lg-7 col-mv-7 col-sm-12 col-one">
                     <span class="hint-title wow fadeIn delay-01s"><b>Depoimentos</b></span>
                     <h1 class="title wow fadeIn delay-01s">
                         <b>O que falam sobre nós?</b>
@@ -318,13 +320,13 @@
     <section class="reserva" id="reservas">
         <div class="container">
             <div class="row">
-                <div class="col-12">
+                <div class="col-12 col-one">
 
                     <div class="card-secondary">
 
                         <div class="row">
 
-                            <div class="col-7">
+                            <div class="col-12 col-lg-7 col-md-7 col-sm-12">
                                 <span class="hint-title wow fadeIn delay-02s"><b>Reserva</b></span>
                                 <h1 class="title">
                                     <b>Quer reservar um horário?</b>
@@ -339,7 +341,7 @@
                                 </a>
                             </div>
 
-                            <div class="col-5">
+                            <div class="col-5 no-mobile">
                                 <div class="card-reserva">
                                     <div class="d-flex img-banner">
                                         <img src="./img/icone-reserva.svg" alt="Icone de reserva">
@@ -361,17 +363,17 @@
         <div class="container">
             <div class="row">
 
-                <div class="col-3 container-logo-footer">
+                <div class="col-12 col-lg-3 col-md-3 col-sm-12 col-one container-logo-footer">
                     <img src="./img/logo.png" alt="Logo" class="logo-footer">
                 </div>
 
-                <div class="col-6 container-texto-footer">
+                <div class="col-12 col-lg-6 col-md-6 col-sm-12 col-one container-texto-footer">
                     <p class="mb-0">
                         <b>KrTec Softwares</b> &copy; Todos os direitos reservados
                     </p>
                 </div>
 
-                <div class="col-3 container-redes-footer">
+                <div class="col-12 col-lg-3 col-md-3 col-sm-12 col-one container-redes-footer">
                     <a href="#" class="btn btn-sm btn-white btn-social mr-3">
                         <i class="fab fa-instagram"></i>
                     </a>
