@@ -417,7 +417,7 @@
 
                 <div id="localEntrega" class="row mr-0 ml-0 hidden">
 
-                    <div class="col-4">
+                    <div class="col-12 col-lg-4 col-md-4 col-sm-12">
                         <div class="form-group container-cep">
                             <label>CEP:</label>
                             <input id="txtCEP" class="form-control" type="text">
@@ -426,40 +426,40 @@
                             </a>
                         </div>
                     </div>
-                    <div class="col-8"></div>
+                    <div class="col-8 no-mobile"></div>
                         
-                        <div class="col-6">
+                        <div class="col-12 col-lg-6 col-md-6 col-sm-12">
                             <div class="form-group">
                                 <label>Endereço:</label>
                                 <input id="txtEndereco" class="form-control" type="text">
                             </div>
                         </div>
-                        <div class="col-4">
+                        <div class="col-12 col-lg-4 col-md-4 col-sm-12">
                             <div class="form-group">
                                 <label>Bairro:</label>
                                 <input id="txtBairro" class="form-control" type="text">
                             </div>
                         </div>
-                        <div class="col-2">
+                        <div class="col-12 col-lg-2 col-md-2 col-sm-12">
                             <div class="form-group">
                                 <label>Numero:</label>
                                 <input id="txtNumero" class="form-control" type="text">
                             </div>
                         </div>
 
-                        <div class="col-6">
+                        <div class="col-12 col-lg-6 col-md-6 col-sm-12">
                             <div class="form-group">
                                 <label>Cidade:</label>
                                 <input id="txtCidade" class="form-control" type="text">
                             </div>
                         </div>
-                        <div class="col-4">
+                        <div class="col-12 col-lg-4 col-md-4 col-sm-12">
                             <div class="form-group">
                                 <label>Complemento:</label>
                                 <input id="txtComplemento" class="form-control" type="text">
                             </div>
                         </div>
-                        <div class="col-2">
+                        <div class="col-12 col-lg-2 col-md-2 col-sm-12">
                             <div class="form-group">
                                 <label>UF:</label>
                                 <select class="form-control" id="ddlUf">
@@ -538,35 +538,32 @@
 
         <div class="m-footer">
             <div class="container">
-                <div class="container">
-                    <div class="container-total text-right mb-4">
-                        <p class="mb-0">
-                            <span>Subtotal:</span>
-                            <span id="lblSubtotal">R$ 0,00</span>
-                        </p>
-                        <p class="mb-0 texto-entrega">
-                            <span><i class="fas fa-motorcycle"></i>Entrega:</span>
-                            <span id="lblValorEntrega">R$ 0,00</span>
-                        </p>
-                        <p class="mb-0 texto-total">
-                            <span><b>Total:</b></span>
-                            <span class="valor-total"><b id="lblValorTotal">R$ 0,00</b></span>
-                        </p>
-                    </div>
-                    <a onclick="cardapio.metodos.carregarEndereco()" class="btn btn-yellow float-right" id="btnEtapaPedido">
-                        Continuar
-                    </a>
-                    <a onclick="cardapio.metodos.resumoPedido()" class="btn btn-yellow float-right hidden" id="btnEtapaEndereco">
-                        Revisar pedido
-                    </a>
-                    <a href="#" class="btn btn-yellow float-right hidden" id="btnEtapaResumo" target="_blank">
-                        Enviar pedido
-                    </a>
-
-                    <a onclick="cardapio.metodos.voltarEtapa()" class="btn btn-white mr-3 float-right hidden" id="btnVoltar">
-                        Voltar
-                    </a>
+                <div class="container-total text-right mb-4">
+                    <p class="mb-0">
+                        <span>Subtotal:</span>
+                        <span id="lblSubtotal">R$ 0,00</span>
+                    </p>
+                    <p class="mb-0 texto-entrega">
+                        <span><i class="fas fa-motorcycle"></i>Entrega:</span>
+                        <span id="lblValorEntrega">R$ 0,00</span>
+                    </p>
+                    <p class="mb-0 texto-total">
+                        <span><b>Total:</b></span>
+                        <span class="valor-total"><b id="lblValorTotal">R$ 0,00</b></span>
+                    </p>
                 </div>
+                <a onclick="cardapio.metodos.carregarEndereco()" class="btn btn-yellow float-right" id="btnEtapaPedido">
+                    Continuar
+                </a>
+                <a onclick="cardapio.metodos.resumoPedido()" class="btn btn-yellow float-right hidden" id="btnEtapaEndereco">
+                    Revisar pedido
+                </a>
+                <a href="#" class="btn btn-yellow float-right hidden" id="btnEtapaResumo" target="_blank">
+                    Enviar pedido
+                </a>
+                <a onclick="cardapio.metodos.voltarEtapa()" class="btn btn-white mr-3 float-right hidden" id="btnVoltar">
+                    Voltar
+                </a>
             </div>
         </div>
 
